@@ -1,29 +1,29 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012\usepackage{graphicx}
+a9942bc0-2dad-11e5-b167-3c15c2c7a012\usepackage{hyperref}
+a9942bc0-2dad-11e5-b167-3c15c2c7a012\usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{pgfplots}
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012
+a9942bc0-2dad-11e5-b167-3c15c2c7a012\usepackage{pgfplots}
+
 \usepackage[backend=]{biblatex}
 \addbibresource{Biblio.bib}
+a9942bc0-2dad-11e5-b167-3c15c2c7a012
+\title{The Z-Table: A Novel Range-Queryable Distributed Data Structure for Use in P2P Systems}
 
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012\title{The Z-Table: A Novel Range-Queryable Distributed Data Structure for Use in P2P Systems}
-
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012
+a9942bc0-2dad-11e5-b167-3c15c2c7a012
 \begin{document}
-
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012\maketitle
+a9942bc0-2dad-11e5-b167-3c15c2c7a012
+\maketitle
 
 \begin{abstract}
 We present the design and implementation of a novel data structure (the 'Z-Table'). We aim to solve the issue of window/range-based queries in peer to peer architectures. Traditional models, for example,  distributed hash tables (DHT), are hostile towards window queries because their hashing operations are designed to uniformly distribute stored data across a defined keyspace; the hashing operations used to achieve this pseudo-random distribution inherently erases all characteristics of the target data that could be used to define locality. We solve this problem of erasure by defining a scheme in which higher-order data is mapped to a first-dimensional keyspace, while preserving locality. The resulting keyspace is very definitely not uniformly distributed, so we define a distributed consensus scheme in which participants in our Z-Tables agree to target highly populated regions of the keyspace. This consensus scheme also provides some protection from Sybil attacks. Finally, we define storage, lookup, and deletion operations that utilize balanced search trees to efficiently perform necessary network functions; the preservation of locality allows us to greatly optimize these operations through the use of balanced trees. A peer to peer communication system acts as the underlying network for participants, providing all of the traditional benefits of a P2P architecture (fault tolerance, scalability, and truly independent operation).
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012\end{abstract}
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012
+a9942bc0-2dad-11e5-b167-3c15c2c7a012\end{abstract}
 
+a9942bc0-2dad-11e5-b167-3c15c2c7a012
 \newpage
 \section{Introduction}
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012Distributed hash tables are currently one of the hottest topics in the cryptography space~\cite{Stoica:2001dj,Rowstron:2001ea,Ratnasamy:2001wn}
+Distributed hash tables are currently one of the hottest topics in the cryptography space~\cite{Stoica:2001dj,Rowstron:2001ea,Ratnasamy:2001wn}
 
 \printbibliography
 \end{document}
-a98f0fb4-2dad-11e5-9978-3c15c2c7a012
+a9942bc0-2dad-11e5-b167-3c15c2c7a012
